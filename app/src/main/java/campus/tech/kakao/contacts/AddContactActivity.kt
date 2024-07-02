@@ -35,18 +35,7 @@ class AddContactActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addcontact)
-        // Initialize UI elements
-        name = findViewById(R.id.name)
-        phone = findViewById(R.id.phone)
-        mail = findViewById(R.id.mail)
-        birth = findViewById(R.id.birth)
-        female = findViewById(R.id.female)
-        male = findViewById(R.id.male)
-        memo = findViewById(R.id.memo)
-        save = findViewById(R.id.save)
-        cancel = findViewById(R.id.cancel)
-        birthSexMemo = findViewById(R.id.birthSexMemo)
-        moreText = findViewById(R.id.moreText)
+        setupUI()
         birth.setOnClickListener {
             showDatePickerDialog()
         }
@@ -118,6 +107,20 @@ class AddContactActivity : AppCompatActivity() {
 
 
 
+    }
+
+    private fun setupUI() {
+        name = findViewById(R.id.name)
+        phone = findViewById(R.id.phone)
+        mail = findViewById(R.id.mail)
+        birth = findViewById(R.id.birth)
+        female = findViewById(R.id.female)
+        male = findViewById(R.id.male)
+        memo = findViewById(R.id.memo)
+        save = findViewById(R.id.save)
+        cancel = findViewById(R.id.cancel)
+        birthSexMemo = findViewById(R.id.birthSexMemo)
+        moreText = findViewById(R.id.moreText)
     }
 
     // 생일 선택 팝업창
