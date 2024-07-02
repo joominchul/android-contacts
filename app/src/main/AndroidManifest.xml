@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddContact"
+            android:name=".AddContactActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

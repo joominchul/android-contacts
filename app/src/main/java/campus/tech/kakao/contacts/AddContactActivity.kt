@@ -5,9 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
 import android.view.View
-import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.PopupWindow
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
@@ -16,10 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
 import campus.tech.kakao.contacts.Contact.Companion.MIGRATION_1_2
 import campus.tech.kakao.contacts.Contact.Companion.MIGRATION_2_3
-import java.time.Month
 import java.util.Calendar
 
-class AddContact : AppCompatActivity() {
+class AddContactActivity : AppCompatActivity() {
     // Declare UI elements
     private lateinit var name: EditText
     private lateinit var phone: EditText
